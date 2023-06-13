@@ -1,9 +1,9 @@
-const elementOfCategories = document.querySelector('#categories').querySelectorAll('.item');
+const itemOfCategoriesEl = document .querySelectorAll('#categories .item');
 
-const countCategories = elementOfCategories.length;
+const countCategories = itemOfCategoriesEl.length;
 console.log(`Number of categories: ${countCategories}`);
 
-const textInTitle = elementOfCategories.forEach(li => {
+itemOfCategoriesEl.forEach(li => {
     const title = li.querySelector('h2').textContent
     const countElement = li.querySelectorAll('li').length
     console.log(`Category: ${title}\nElements: ${countElement}`)
