@@ -6,7 +6,7 @@ formRef.addEventListener('submit', onSubmitForm);
 function onSubmitForm(even) {
     even.preventDefault();
     const { email, password } = even.currentTarget.elements;
-    if (email.value !== '' && password.value !== '') {
+    if (email.value && password.value) {
         formData.email = email.value;
         formData.password = password.value;
         console.log(formData);
