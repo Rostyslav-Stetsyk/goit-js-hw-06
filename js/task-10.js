@@ -32,5 +32,6 @@ function onButtonCreate() {
 }
 
 function onButtonDestroy() {
-  refs.boxes.innerHTML = ''
+  refs.boxes.innerHTML = '';
+  refs.inputNumbers.value = '';
 }
