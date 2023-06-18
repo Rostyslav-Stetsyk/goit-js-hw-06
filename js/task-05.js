@@ -6,7 +6,7 @@ const refs = {
 refs.input.addEventListener('input', onInputChange);
 
 function onInputChange(even) {
-    if (even.currentTarget.value === '') {
+    if (!even.currentTarget.value) {
         refs.nameOutput.textContent = 'Anonymous'
     } else {
         refs.nameOutput.textContent = even.currentTarget.value
